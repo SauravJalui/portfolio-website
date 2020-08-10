@@ -71,7 +71,38 @@ body {
 	max-width: 100%;
 }
 
-.skillsSection {
+.skillsSection,
+.contactsSection {
 	background-color: #E91E63;
 	color: #fff;
+}
+
+.skill {
+	text-align: center;
+	margin-left: 10px;
+}
+
+.chart {
+	position: relative;
+    width: 152px;
+    height: 152px;
+    display: inline-block;
+    text-align: center;
+}
+
+.chart canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.chart .percent {
+	color: #000;
+    line-height: 152px;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.chart .percent:after {
+	content: '%';
 }
